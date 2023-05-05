@@ -27,3 +27,7 @@ function loadQr() {
 	var message = localStorage.getItem("message");
 	new QRCode("qrcode", "sms://" + phoneNumber + "&body=" + message);
 }
+
+function updateCharacterCount() {
+	$('#charNum').text($('#message').val().length + "/39 characters");
+}

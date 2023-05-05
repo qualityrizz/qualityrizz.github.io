@@ -17,7 +17,8 @@
     </header>
     <div class="container">
         <form id="message-form" action="javascript:sendMessage()">
-            <textarea name="message" id="message" placeholder="Enter a message for them to send you..."></textarea>
+            <p id="charNum" class="character-count">0/39 characters</p>
+            <textarea name="message" id="message" maxlength="39" onkeyup="updateCharacterCount()" placeholder="Enter a message for them to send you..."></textarea>
             <button type="submit" class="button-blue">Generate</button>
         </form>
     </div>
