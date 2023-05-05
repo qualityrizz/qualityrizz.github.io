@@ -1,4 +1,6 @@
-@import url('https://fonts.cdnfonts.com/css/lucida-handwriting-new');
+@font-face {
+  font-family: "Lucida Handwriting New"; src: url('https://fonts.cdnfonts.com/css/lucida-handwriting-new');
+}
 
 body {
   margin: 0;
