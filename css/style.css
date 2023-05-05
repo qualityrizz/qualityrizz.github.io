@@ -143,8 +143,16 @@ textarea {
 /* Styles for qr.html */
 
 .qr-container {
-  width: 75%;
-  height: 75%;
+  margin-top: 50px;
+  padding: 40px;
+  background-color: #900D7F;
+  border-radius: 40px;
+}
+
+.qr-code {
+  margin: auto;
+  display: block;
+  position: absolute;
 }
 
 .character-count {

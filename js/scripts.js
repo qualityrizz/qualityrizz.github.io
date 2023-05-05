@@ -25,7 +25,14 @@ function sendMessage() {
 function loadQr() {
 	var phoneNumber = localStorage.getItem("phoneNumber");
 	var message = localStorage.getItem("message");
-	new QRCode("qrcode", "sms://" + phoneNumber + "&body=" + message);
+	new QRCode("qrcode", {
+		text: "sms://" + phoneNumber + "&body=" + message,
+		width: 256,
+		height: 256,
+		colorDark: "#5B0F71",
+		colorLight: "#ffffff",
+		correctLevel: QRCode.CorrectLevel.H
+	});
 }
 
 function updateCharacterCount() {
