@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Vibur"; 
+  src: url('https://fonts.googleapis.com/css?family=Vibur');
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -86,7 +91,7 @@ textarea {
 /* Styles for compose.html */
 
 .message-input {
-    width: 80%;
+    width: 90%;
     min-height: 200px;
     max-height: 400px;
     font-size: 1.2rem;
